@@ -21,7 +21,7 @@ $ docker pull nihsdnfi/galaxy-cutsite-detection:latest
 ```vb
 $ docker run -d --name galaxy-csd -p 8080:80 -p 8021:21 nihsdnfi/galaxy-cutsite-detection:latest
 ```
-After a few minutes entering above command, you will be able to access Galaxy for Cut Site Detection via “localhost:8080” from web browser.
+After a few minutes entering above command, you will be able to access Galaxy for Cut Site Detection via ```localhost:8080``` from web browser.
 
 <br>
 
