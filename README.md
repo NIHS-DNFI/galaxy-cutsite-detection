@@ -3,7 +3,6 @@ Galaxy for Cut Site Detection is a Galaxy (https://usegalaxy.org/) based data an
 Galaxy for Cut Site Detection identifies DSB sites with termination positions of aligned reads. 
 Optinally, user can focus the cut sites only within the annotated region (e.g. exon).
 
-![Fig1_for_github](https://user-images.githubusercontent.com/83062613/177895797-9d3d6b7a-5af8-4235-8250-15174cc70c43.png)
 
 ## Usage
 ### Requirements
