@@ -1,7 +1,7 @@
 # Galaxy for Cut Site Detection
 Galaxy for Cut Site Detection is a Galaxy (https://usegalaxy.org/) based data analysis pipeline for off-target sequence such as SITE-Seq. 
 Galaxy for Cut Site Detection identifies DSB sites with termination positions of aligned reads. 
-Optinally, user can focus the cut sites only within the annotated region (e.g. exon).
+Optionally, user can focus the cut sites only within the annotated region (e.g. exon).
 
 
 ## Usage
