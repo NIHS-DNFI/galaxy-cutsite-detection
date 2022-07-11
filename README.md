@@ -13,13 +13,13 @@ Galaxy for Cut Site Detection requires Docker. Download from Docker Desktop offi
 ### Running Galaxy for Cut Site Detection container
 First, pull a Galaxy for Cut Site Detection docker image from our repository (https://hub.docker.com/repository/docker/nihsdnfi/galaxy-cutsite-detection).
 ```vb
-$ docker pull nihsdnfi/galaxy-cutsite-detection:latest
+$ docker pull nihsdnfi/galaxy-cutsite-detection:0.XX
 ```
 <br>
 
 ### Run Galaxy for Cut Site Detection  
 ```vb
-$ docker run -d --name galaxy-csd -p 8080:80 -p 8021:21 nihsdnfi/galaxy-cutsite-detection:latest
+$ docker run -d --name galaxy-csd -p 8080:80 nihsdnfi/galaxy-cutsite-detection:0.XX
 ```
 After a few minutes entering above command, you will be able to access Galaxy for Cut Site Detection via ```localhost:8080``` from web browser.
 
