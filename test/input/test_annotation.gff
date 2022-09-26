@@ -1,0 +1,12 @@
+chr09	irgsp1_rep	mRNA	9757	12691	.	-	.	gene_id "Os09g0517700"; transcript_id "Os09t0517700-01";
+chr09	irgsp1_rep	exon	9757	10107	.	-	.	gene_id "Os09g0517700"; transcript_id "Os09t0517700-01";
+chr09	irgsp1_rep	exon	10224	10352	.	-	.	gene_id "Os09g0517700"; transcript_id "Os09t0517700-01";
+chr09	irgsp1_rep	exon	10546	11033	.	-	.	gene_id "Os09g0517700"; transcript_id "Os09t0517700-01";
+chr09	irgsp1_rep	exon	11151	11328	.	-	.	gene_id "Os09g0517700"; transcript_id "Os09t0517700-01";
+chr09	irgsp1_rep	exon	12109	12691	.	-	.	gene_id "Os09g0517700"; transcript_id "Os09t0517700-01";
+chr12	irgsp1_rep	mRNA	5164	13386	.	+	.	gene_id "Os12g0403800"; transcript_id "Os12t0403800-01";
+chr12	irgsp1_rep	exon	5164	5661	.	+	.	gene_id "Os12g0403800"; transcript_id "Os12t0403800-01";
+chr12	irgsp1_rep	exon	5742	5798	.	+	.	gene_id "Os12g0403800"; transcript_id "Os12t0403800-01";
+chr12	irgsp1_rep	exon	7288	7380	.	+	.	gene_id "Os12g0403800"; transcript_id "Os12t0403800-01";
+chr12	irgsp1_rep	exon	10554	10632	.	+	.	gene_id "Os12g0403800"; transcript_id "Os12t0403800-01";
+chr12	irgsp1_rep	exon	13069	13386	.	+	.	gene_id "Os12g0403800"; transcript_id "Os12t0403800-01";
