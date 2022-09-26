@@ -6,6 +6,7 @@ Optionally, user can focus the cut sites only within the annotated region (e.g. 
 
 ## Usage
 ### Requirements
+If you are using Windows machine, you must first enable the “Windows Subsystem for Linux” optional feature before installing any Linux distributions on Windows.　Please refer to the following page for WSL installation (https://learn.microsoft.com/en-us/windows/wsl/install).
 Galaxy for Cut Site Detection requires Docker. Download from Docker Desktop official site (https://www.docker.com/products/docker-desktop).
 
 <br>
