@@ -1,0 +1,2 @@
+chr09	irgsp1_rep	mRNA	11244	11245	.	-	.	gene_id "Os09g0517700"; transcript_id "Os09t0517700-01";
+chr12	irgsp1_rep	mRNA	10781	10782	.	+	.	gene_id "Os12g0403800"; transcript_id "Os12t0403800-01";
