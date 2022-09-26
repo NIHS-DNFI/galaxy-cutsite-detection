@@ -1,0 +1,52 @@
+<tool id="siteseq" name="SITE-Seq" version="0.1.0">
+  <description>Cut site detection by SITE-Seq.</description>
+  <requirements>
+    <requirement type="package" version="0.1.0">siteseq</requirement>
+  </requirements>
+  <command detect_errors="exit_code">
+    <![CDATA[
+#if $infasta.is_of_type("fasta.gz"):
+  gunzip -c '$infasta' > input.fa &&
+#else:
+  ln -sf '$infasta' input.fa &&
+#end if
+
+ln -sf '$inbam' input.bam &&
+
+python $__tool_directory__/siteseq.py
+-t $numreads
+-i input.bam
+-R input.fa
+-o bedlike.txt
+-p outlist.txt &&
+
+cat bedlike.txt |
+awk '!a[$2]++{print $0}' |
+awk 'gsub(":","\t") {print $3,"\t",$4,"\t",$4}' |
+awk 'gsub(" ","") {print $0}' |
+sort -k1,1 -k2,2n
+> '$output2'
+    ]]>
+  </command>
+  <inputs>
+    <param type="data" name="inbam" format="bam" label="Input BAM file"/>
+    <param type="data" name="infasta" format="fasta,fasta.gz" label="Input Fasta file"/>
+    <param argument="numreads" type="integer" value="10" label="Minimum number of reads for calling peaks"/>
+  </inputs>
+  <outputs>
+    <data name="output1" format="tabular" from_work_dir="bedlike.txt" label="${tool.name} on ${on_string} (tabular format)"/>
+    <data name="output2" format="bed" label="${tool.name} on ${on_string} (bed format)"/>
+  </outputs>
+  <help><![CDATA[
+.. class:: infomark
+
+**What it does**
+
+SITE-Seq feature calling function.
+
+This python script was modified from a published research as below.
+]]>  </help>
+  <citations>
+    <citation type="doi">10.1038/nmeth.4284</citation>
+  </citations>
+</tool>
